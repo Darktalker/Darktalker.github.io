@@ -20,26 +20,30 @@
     var CONFIG = {"hostname":"darktalker.github.io","root":"/","scheme":"Muse","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://darktalker.github.io/index.html">
+  <meta name="description" content="《C++面向对象高级开发》Chapter01 C++编程简介前置知识曾经学过某类面向过程语言（C语言）  变量 类型:int,float,char,struct … 作用域scope 循环:while,for 流程控制:if-else,switch-case  学习目标 培养正规的、大气的编程习惯 以良好的方式编写C++ class class without pointer members Co">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++">
+<meta property="og:url" content="https://darktalker.github.io/2020/03/17/C++/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="《C++面向对象高级开发》Chapter01 C++编程简介前置知识曾经学过某类面向过程语言（C语言）  变量 类型:int,float,char,struct … 作用域scope 循环:while,for 流程控制:if-else,switch-case  学习目标 培养正规的、大气的编程习惯 以良好的方式编写C++ class class without pointer members Co">
+<meta property="article:published_time" content="2020-03-17T07:30:05.817Z">
+<meta property="article:modified_time" content="2019-11-18T02:09:22.161Z">
 <meta property="article:author" content="Darktalker">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://darktalker.github.io/">
+<link rel="canonical" href="https://darktalker.github.io/2020/03/17/C++/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false
+    isHome : false,
+    isPost : true
   };
 </script>
 
-  <title>Hexo</title>
+  <title>C++ | Hexo</title>
   
 
 
@@ -139,10 +143,10 @@
             
 
   <div class="posts-expand">
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-Hans">
     <link itemprop="mainEntityOfPage" href="https://darktalker.github.io/2020/03/17/C++/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -156,8 +160,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/17/C++/" class="post-title-link" itemprop="url">C++</a>
+          C++
         </h1>
 
         <div class="post-meta">
@@ -188,7 +191,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="《C-面向对象高级开发》"><a href="#《C-面向对象高级开发》" class="headerlink" title="《C++面向对象高级开发》"></a>《C++面向对象高级开发》</h1><h2 id="Chapter01-C-编程简介"><a href="#Chapter01-C-编程简介" class="headerlink" title="Chapter01 C++编程简介"></a>Chapter01 C++编程简介</h2><h3 id="前置知识"><a href="#前置知识" class="headerlink" title="前置知识"></a>前置知识</h3><p>曾经学过某类面向过程语言（C语言）</p>
+        <h1 id="《C-面向对象高级开发》"><a href="#《C-面向对象高级开发》" class="headerlink" title="《C++面向对象高级开发》"></a>《C++面向对象高级开发》</h1><h2 id="Chapter01-C-编程简介"><a href="#Chapter01-C-编程简介" class="headerlink" title="Chapter01 C++编程简介"></a>Chapter01 C++编程简介</h2><h3 id="前置知识"><a href="#前置知识" class="headerlink" title="前置知识"></a>前置知识</h3><p>曾经学过某类面向过程语言（C语言）</p>
 <ul>
 <li>变量</li>
 <li>类型:int,float,char,struct …</li>
@@ -331,94 +334,33 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">class A&#123;</span><br><span class="line">public:</span><br><span class="line">    static A&amp; getInstance();</span><br><span class="line">    setup()&#123;...&#125;</span><br><span class="line">private:</span><br><span class="line">	A();</span><br><span class="line">	A(const A&amp; rhs);</span><br><span class="line">	...</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">A&amp; A::getInstance()</span><br><span class="line">&#123;</span><br><span class="line">    static A a;</span><br><span class="line">    return a;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="https://darktalker.github.io/2020/03/15/hello-world/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Darktalker">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/15/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">نوشته شده در</span>
-
-              <time title="ایجاد شده: 2020-03-15 18:13:19" itemprop="dateCreated datePublished" datetime="2020-03-15T18:13:19+08:00">2020-03-15</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/15/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
   
 
   </div>
-
-  
-
 
 
           </div>
@@ -469,6 +411,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#《C-面向对象高级开发》"><span class="nav-number">1.</span> <span class="nav-text">《C++面向对象高级开发》</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter01-C-编程简介"><span class="nav-number">1.1.</span> <span class="nav-text">Chapter01 C++编程简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前置知识"><span class="nav-number">1.1.1.</span> <span class="nav-text">前置知识</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#学习目标"><span class="nav-number">1.1.2.</span> <span class="nav-text">学习目标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获得的代码"><span class="nav-number">1.1.3.</span> <span class="nav-text">获得的代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C-的历史"><span class="nav-number">1.1.4.</span> <span class="nav-text">C++的历史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C-演化"><span class="nav-number">1.1.5.</span> <span class="nav-text">C++演化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C-相关书籍"><span class="nav-number">1.1.6.</span> <span class="nav-text">C++相关书籍</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter02-头文件与类的声明"><span class="nav-number">1.2.</span> <span class="nav-text">Chapter02 头文件与类的声明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#C与C"><span class="nav-number">1.2.1.</span> <span class="nav-text">C与C++</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C-关于数据和函数"><span class="nav-number">1.2.2.</span> <span class="nav-text">C++关于数据和函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C-programs代码基本形式"><span class="nav-number">1.2.3.</span> <span class="nav-text">C++ programs代码基本形式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C-vs-C"><span class="nav-number">1.2.4.</span> <span class="nav-text">C++ vs. C</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Header头文件中的防御式声明"><span class="nav-number">1.2.5.</span> <span class="nav-text">Header头文件中的防御式声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#头文件的布局"><span class="nav-number">1.2.6.</span> <span class="nav-text">头文件的布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#class的声明-declaration"><span class="nav-number">1.2.7.</span> <span class="nav-text">class的声明(declaration)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#class-template-模板-简介"><span class="nav-number">1.2.8.</span> <span class="nav-text">class template(模板)简介</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter-03-构造函数"><span class="nav-number">1.3.</span> <span class="nav-text">Chapter 03 构造函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#class的声明"><span class="nav-number">1.3.1.</span> <span class="nav-text">class的声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#inline内联函数"><span class="nav-number">1.3.2.</span> <span class="nav-text">inline内联函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#access-level-访问级别"><span class="nav-number">1.3.3.</span> <span class="nav-text">access level(访问级别)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#构造函数"><span class="nav-number">1.3.4.</span> <span class="nav-text">构造函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#构造函数可以有很多个重载"><span class="nav-number">1.3.5.</span> <span class="nav-text">构造函数可以有很多个重载</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter-04-参数传递与返回值"><span class="nav-number">1.4.</span> <span class="nav-text">Chapter 04 参数传递与返回值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#把构造函数放在private区域内"><span class="nav-number">1.4.1.</span> <span class="nav-text">把构造函数放在private区域内</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
