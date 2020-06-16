@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://Darktalker.github.io">
-  <title>Tag: jottings | Darktalker</title>
+  <title>Cpp Advantage(1) | Darktalker</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Darktalker">
-<meta property="og:url" content="https://darktalker.github.io/tags/jottings/index.html">
+  <meta name="description" content="封装Section01  封装初识类与对象认识类与对象 定义  类（class）：在面向对象编程中是一种面的对象计算机语言的构造，是创建对象的蓝图，描述了所创建的对象共同的属性和方法。 对象（object）：由类创造出对象  深入理解类  类是 C++ 的核心特性，在 C++ 的世界中，可以将所有事物都看作为一个对象，将对象进行封装之后成为一个类，通常被称为用户定义类型。 例如：可以将猫、狗、鸟、">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cpp Advantage(1)">
+<meta property="og:url" content="https://darktalker.github.io/2020/06/16/Cpp-Advantage(1)/index.html">
 <meta property="og:site_name" content="Darktalker">
+<meta property="og:description" content="封装Section01  封装初识类与对象认识类与对象 定义  类（class）：在面向对象编程中是一种面的对象计算机语言的构造，是创建对象的蓝图，描述了所创建的对象共同的属性和方法。 对象（object）：由类创造出对象  深入理解类  类是 C++ 的核心特性，在 C++ 的世界中，可以将所有事物都看作为一个对象，将对象进行封装之后成为一个类，通常被称为用户定义类型。 例如：可以将猫、狗、鸟、">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-06-16T02:38:36.000Z">
+<meta property="article:modified_time" content="2020-06-16T04:16:31.497Z">
 <meta property="article:author" content="Darktalker">
+<meta property="article:tag" content="Cpp">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Darktalker" type="application/atom+xml">
@@ -150,60 +155,438 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Cpp-Advantage(1)" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/19/SEG-abstract-%E5%86%99%E4%BD%9C%E6%8C%87%E5%8C%97/" class="archive-article-date">
-  	<time datetime="2020-03-19T09:02:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-19</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/19/SEG-abstract-%E5%86%99%E4%BD%9C%E6%8C%87%E5%8C%97/">SEG abstract 写作指北</a>
+    <h1 class="article-title" itemprop="name">
+      Cpp Advantage(1)
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/06/16/Cpp-Advantage(1)/" class="archive-article-date">
+  	<time datetime="2020-06-16T02:38:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h1><h1 id="Section01-封装"><a href="#Section01-封装" class="headerlink" title="Section01  封装"></a>Section01  封装</h1><h2 id="初识类与对象"><a href="#初识类与对象" class="headerlink" title="初识类与对象"></a>初识类与对象</h2><h3 id="认识类与对象"><a href="#认识类与对象" class="headerlink" title="认识类与对象"></a>认识类与对象</h3><ul>
+<li>定义</li>
+</ul>
+<p>类（class）：在面向对象编程中是一种面的对象计算机语言的构造，是创建对象的蓝图，描述了所创建的对象共同的属性和方法。</p>
+<p>对象（object）：由类创造出对象</p>
+<ul>
+<li>深入理解类</li>
+</ul>
+<p>类是 C++ 的核心特性，在 C++ 的世界中，可以将所有事物都看作为一个对象，将对象进行封装之后成为一个类，通常被称为用户定义类型。</p>
+<p>例如：可以将猫、狗、鸟、桌子、学生、人、三角形、矩形等都封装为一个类，只要在实际编程中用到的都可以抽象封装为一个类。</p>
+<ul>
+<li>C++相关概念</li>
+</ul>
+<ol>
+<li><p>构造函数</p>
+<p>类的构造函数是一种特殊的函数，在创建一个新的对象时自动调用</p>
+</li>
+<li><p>析构函数</p>
+<p>类的析构函数也是一种特殊的函数，在删除所创建的对象时自动调用</p>
+</li>
+<li><p>拷贝构造函数</p>
+<p>拷贝构造函数，是一种特殊的构造函数，它在创建对象时，是使用同一类中之前创建的对象来初始化新创建的对象</p>
+</li>
+<li><p>友元函数</p>
+<p>友元函数可以访问类的 private 和 protected 成员</p>
+</li>
+<li><p>内联函数</p>
+<p>通过内联函数，编译器试图在调用函数的地方扩展函数体中的代码</p>
+</li>
+<li><p>类成员函数</p>
+<p>类的成员函数是指那些把定义和原型写在类定义内部的函数，就像类定义中的其他变量一样</p>
+</li>
+<li><p>类访问修饰符</p>
+<p>类成员可以被定义为 public、private 或 protected。默认情况下是定义为 private</p>
+</li>
+<li><p>this指针</p>
+<p>每个对象都有一个特殊的指针 this，它指向对象本身</p>
+</li>
+<li><p>静态成员</p>
+<p>类的数据成员和成员函数都可以被声明为静态的</p>
+</li>
+</ol>
+<h3 id="自定义类"><a href="#自定义类" class="headerlink" title="自定义类"></a>自定义类</h3><p>举个栗子：假设最近在做一个学校管理系统的项目，首先想到可以将学生定义为一个类，然后发现可以在学生类的基础上再抽象出一个人类的对象，如果需要用到学生的学科，可以进一步将学科也封装为一个，还可以封装文件操作类，数据库操作类等等。</p>
+<h4 id="示例代码-1"><a href="#示例代码-1" class="headerlink" title="示例代码 1"></a>示例代码 1</h4><p>定义一个学生类：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// class 类关键字、Student 类名</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span> </span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="comment">// 访问限制符 - 公有属性</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    Student() &#123;&#125;    <span class="comment">// 构造函数</span></span><br><span class="line">    ~Student() &#123;&#125;    <span class="comment">// 析构函数</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 成员函数</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">setName</span><span class="params">(<span class="built_in">string</span> name)</span> </span>&#123; <span class="keyword">this</span>-&gt;name = name; &#125;</span><br><span class="line">    <span class="function"><span class="built_in">string</span> <span class="title">getName</span><span class="params">()</span> <span class="keyword">const</span> </span>&#123; <span class="keyword">return</span> name; &#125;;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">setAge</span><span class="params">(<span class="keyword">int</span> age)</span> </span>&#123; <span class="keyword">this</span>-&gt;age = age; &#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span> <span class="keyword">const</span> </span>&#123; <span class="keyword">return</span> age; &#125;</span><br><span class="line"><span class="comment">// 访问限制符 - 私有属性</span></span><br><span class="line"><span class="keyword">private</span>: </span><br><span class="line">    <span class="comment">// 数据成员</span></span><br><span class="line">    <span class="built_in">string</span> name;</span><br><span class="line">    <span class="keyword">int</span> age;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Note：</p>
+<ol>
+<li>定义一个类时，需要使用关键字 class 来进行修饰。</li>
+<li>一个简单的类可以没有构造函数和析构函数，但是系统自动生成一个默认的构造函数和析构函数。</li>
+<li>在类中使用关键字 public 、 private 和 protected 来限制数据成员和成员函数，一般使用 public 和 private 来修饰数据成员和成员函数。</li>
+<li>一般将数据成员封装在 private 关键字下，不让用户直接访问数据成员，而是通过成员函数来进行访问。</li>
+<li>在类的最后（大括号后）必须要有一个逗号，勿忘。</li>
+</ol>
+<h3 id="实例化对象"><a href="#实例化对象" class="headerlink" title="实例化对象"></a>实例化对象</h3><p>实例化对象有两种方式，一种是在栈上实例化，另一种是堆上实例化。</p>
+<h4 id="示例代码-2"><a href="#示例代码-2" class="headerlink" title="示例代码 2"></a>示例代码 2</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// 栈上实例化</span></span><br><span class="line">    Student stu1;</span><br><span class="line">    stu1.setName(<span class="string">"jake"</span>);</span><br><span class="line">    stu1.setAge(<span class="number">15</span>);</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"My name is "</span> &lt;&lt; stu1.getName() &lt;&lt; <span class="string">", I'm "</span> &lt;&lt; stu1.getAge() &lt;&lt; <span class="string">" years old."</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 堆上实例化</span></span><br><span class="line">    Student *stu2 = <span class="keyword">new</span> Student;</span><br><span class="line">    <span class="comment">// 访问</span></span><br><span class="line">    stu2-&gt;setName(<span class="string">"Siri"</span>);</span><br><span class="line">    stu2-&gt;setAge(<span class="number">5</span>);</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"My name is "</span> &lt;&lt; stu2-&gt;getName() &lt;&lt; <span class="string">", I'm "</span> &lt;&lt; stu2-&gt;getAge() &lt;&lt; <span class="string">" years old."</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="comment">// 释放内存</span></span><br><span class="line">    <span class="keyword">delete</span> stu2;</span><br><span class="line">    stu2 = <span class="literal">nullptr</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>实例化对象注意事项：</p>
+<ol>
+<li>在栈上实例化的对象，超出定义域对象资源会自动被系统回收。</li>
+<li>在堆上实例化的对象，最后需要使用 delete 关键字来释放内存，否则会造成内存泄漏。</li>
+<li>使用栈实例化的对象使用 “.” 来访问数据成员或成员函数，在堆上实例化的对象使用 “-&gt;” 来访问数据成员或成员函数。</li>
+<li>释放完内存后将对象置空，防止野指针。</li>
+</ol>
+<h4 id="实验操作1"><a href="#实验操作1" class="headerlink" title="实验操作1"></a>实验操作1</h4><p>实验要求：</p>
+<ol>
+<li>在 <code>/home/project/</code> 目录下创建一个 <code>Student.cpp</code> 文件。</li>
+<li>尝试根据示例代码 1 和示例代码 2 来编写程序。</li>
+<li>定义一个 <code>Student</code> 类，<code>Student</code> 类中定义 <code>name</code> 和 <code>age</code> 数据成员。</li>
+<li>在 <code>Student</code> 类中定义其构造函数、析构函数和数据操作函数。</li>
+<li>对 <code>main</code> 函数分别在栈和堆上实例化对象，并访问成员函数，最后输出对象的 <code>name</code> 和 <code>age</code> 值。</li>
+<li>编写完并且保存文件。</li>
+<li>编译并查看是否有错误信息：<code>g++ Student.cpp -o Student -std=c++11</code>。</li>
+<li>运行程序并查看输出信息：<code>./Student</code>。</li>
+</ol>
+<ol>
+<li>创建cpp文件</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /home/project/</span><br><span class="line">$ touch Student.cpp</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>编写Student类</li>
+</ol>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        <span class="comment">// 构造函数</span></span><br><span class="line">        Student()&#123;&#125;</span><br><span class="line">        <span class="comment">// 构造函数的重载不能存在歧义</span></span><br><span class="line">        <span class="comment">//Student(string iname = "anonymous", int iage = 18, string isid = "101") </span></span><br><span class="line">        <span class="comment">//        : name(iname), age(iage), sid(isid)&#123;&#125;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 析构函数</span></span><br><span class="line">        ~Student()&#123;&#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">friend</span> ostream&amp; <span class="keyword">operator</span>&lt;&lt; (ostream&amp;,<span class="keyword">const</span> Student&amp;);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 成员函数</span></span><br><span class="line">        <span class="comment">// 设置姓名</span></span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">setName</span><span class="params">(<span class="built_in">string</span> name)</span></span>&#123;<span class="keyword">this</span>-&gt;name = name;&#125;</span><br><span class="line">        <span class="comment">// 获得姓名</span></span><br><span class="line">        <span class="function"><span class="built_in">string</span> <span class="title">getName</span><span class="params">()</span></span>&#123;<span class="keyword">return</span> <span class="keyword">this</span>-&gt;name;&#125;</span><br><span class="line">        <span class="comment">// 设置年龄</span></span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">setAge</span><span class="params">(<span class="keyword">int</span> age)</span></span>&#123;<span class="keyword">this</span>-&gt;age = age;&#125;</span><br><span class="line">        <span class="comment">// 获得年龄</span></span><br><span class="line">        <span class="function"><span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span></span>&#123;<span class="keyword">return</span> <span class="keyword">this</span>-&gt;age;&#125;</span><br><span class="line">        <span class="comment">// 设置学号</span></span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">setSid</span><span class="params">(<span class="built_in">string</span> sid)</span></span>&#123;<span class="keyword">this</span>-&gt;sid = sid;&#125;</span><br><span class="line">        <span class="comment">// 获得学号</span></span><br><span class="line">        <span class="function"><span class="built_in">string</span> <span class="title">getSid</span><span class="params">()</span></span>&#123;<span class="keyword">return</span> <span class="keyword">this</span>-&gt;sid;&#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span>:</span><br><span class="line">        <span class="comment">// 成员变量</span></span><br><span class="line">        <span class="built_in">string</span> name;</span><br><span class="line">        <span class="keyword">int</span> age;</span><br><span class="line">        <span class="built_in">string</span> sid;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">ostream&amp; <span class="keyword">operator</span>&lt;&lt; (ostream&amp; os,<span class="keyword">const</span> Student&amp; stu)</span><br><span class="line">&#123;</span><br><span class="line">    os &lt;&lt; stu.name&lt;&lt; <span class="string">" "</span> &lt;&lt;stu.age&lt;&lt; <span class="string">" "</span>&lt;&lt; stu.sid;</span><br><span class="line">    <span class="keyword">return</span> os;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// 栈上初始化</span></span><br><span class="line">    Student stu1;</span><br><span class="line">    stu1.setName(<span class="string">"Amy"</span>);</span><br><span class="line">    stu1.setAge(<span class="number">18</span>);</span><br><span class="line">    stu1.setSid(<span class="string">"101"</span>);</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; stu1 &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; stu1.getName() &lt;&lt; <span class="string">" "</span> &lt;&lt; stu1.getAge() &lt;&lt; <span class="string">" "</span> &lt;&lt;stu1.getSid() &lt;&lt; <span class="string">" "</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 堆上初始化</span></span><br><span class="line">    Student *stu2 = <span class="keyword">new</span> Student;</span><br><span class="line">    <span class="comment">// 访问</span></span><br><span class="line">    stu2-&gt;setName(<span class="string">"Mike"</span>);</span><br><span class="line">    stu2-&gt;setAge(<span class="number">18</span>);</span><br><span class="line">    stu2-&gt;setSid(<span class="string">"102"</span>);</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; stu2-&gt;getName() &lt;&lt; <span class="string">" "</span> &lt;&lt; stu2-&gt;getAge() &lt;&lt; <span class="string">" "</span> &lt;&lt;stu2-&gt;getSid() &lt;&lt; <span class="string">" "</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 释放内存</span></span><br><span class="line">    <span class="keyword">delete</span> stu2;</span><br><span class="line">    stu2 = <span class="literal">nullptr</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="string介绍"><a href="#string介绍" class="headerlink" title="string介绍"></a>string介绍</h3><ul>
+<li>string类</li>
+</ul>
+<ol>
+<li>string 类头文件 <code>#include&lt;string&gt;</code>。</li>
+<li>string 类在 std 命名空间内。</li>
+<li>使用 string 实例化一个字符串类型的对象。</li>
+<li>对字符串对象执行例如拼接、查找等操作。</li>
+</ol>
+<ul>
+<li>初始化方式</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>实例化</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>string s1;</td>
+<td>s1 为空字符串</td>
+</tr>
+<tr>
+<td>string s2(“ABC”);</td>
+<td>s2 初始值为 “ABC”</td>
+</tr>
+<tr>
+<td>string s3 = s2; string s3(s2);</td>
+<td>s3 初始化为 s2 的一个副本</td>
+</tr>
+<tr>
+<td>string s4(n, ‘c’ );</td>
+<td>s4 初始化为字符 ‘c’ 的 n 个副本</td>
+</tr>
+</tbody></table>
+<ul>
+<li>常用操作</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>s.empty()</td>
+<td>判断 s 是否为空，如果 s 为空返回 true，否则返回 false</td>
+</tr>
+<tr>
+<td>s.size()</td>
+<td>返回 s 中字符的个数，和 s.length() 功能相同</td>
+</tr>
+<tr>
+<td>s[n]</td>
+<td>返回 s 中位置 n 的字符，位置从0开始。切记不要越界</td>
+</tr>
+<tr>
+<td>s1 + s2</td>
+<td>将 s1 和 s2 连接成新字符串，返回新字符串</td>
+</tr>
+<tr>
+<td>s1 = s2</td>
+<td>赋值，将 s2 内容赋值给 s1</td>
+</tr>
+<tr>
+<td>s1 == s2</td>
+<td>判断相等，相等返回 true，否则返回 false</td>
+</tr>
+<tr>
+<td>s1 != s2</td>
+<td>判断不等，不等返回 true，否则返回 false</td>
+</tr>
+<tr>
+<td>s.c_str()</td>
+<td>返回 char*，和 s.data() 功能相同</td>
+</tr>
+<tr>
+<td>stoi()</td>
+<td>字符串转 int，还有 stol()，stoll()</td>
+</tr>
+<tr>
+<td>stof()</td>
+<td>字符串转 float, 还有 stod()，stold()</td>
+</tr>
+</tbody></table>
+<h4 id="示例代码3"><a href="#示例代码3" class="headerlink" title="示例代码3"></a>示例代码3</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// string 初始化</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">string</span> s1;</span><br><span class="line">    <span class="built_in">string</span> s2 = <span class="string">"hello"</span>;</span><br><span class="line">    <span class="function"><span class="built_in">string</span> <span class="title">s3</span><span class="params">(<span class="string">"world"</span>)</span></span>;</span><br><span class="line">    <span class="built_in">string</span> s4 = s1 + s2;</span><br><span class="line">    <span class="built_in">string</span> s5 = <span class="string">"hello "</span> + s2;</span><br><span class="line">    <span class="built_in">string</span> s6 = <span class="string">"hello "</span> + s2 + <span class="string">"world"</span>;</span><br><span class="line">    <span class="function"><span class="built_in">string</span> <span class="title">s7</span><span class="params">(<span class="number">5</span>, <span class="string">'c'</span>)</span></span>; </span><br><span class="line">    <span class="built_in">string</span> s8 = <span class="string">"hello"</span> + <span class="string">" world"</span> <span class="comment">// Error </span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="示例代码4"><a href="#示例代码4" class="headerlink" title="示例代码4"></a>示例代码4</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// 初始化</span></span><br><span class="line">    <span class="built_in">string</span> s1 = <span class="string">"hello"</span>; </span><br><span class="line">    <span class="built_in">string</span> s2 = <span class="string">"this is shiyanlou."</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// size() 和 length() 都是返回字符串的长度</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"s1.size() = "</span> &lt;&lt; s1.<span class="built_in">size</span>() &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"s1.length() = "</span> &lt;&lt; s1.length() &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 需要注意 capacity() 是返回 string 的当前容量，string 本身是一个数组，所以 capacity() 返回的长度可能会大于 size() 或者 length() 返回的长度</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"s1.capacity() = "</span> &lt;&lt; s1.capacity() &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// s1.at(i) 和 s1[i] 都是访问位置 i 的字符</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"s1.at(1) = "</span> &lt;&lt; s1.at(<span class="number">1</span>) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"s1[1] = "</span> &lt;&lt; s1[<span class="number">1</span>] &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// find() 查到字符，找到返回字符串位置，否则返回 -1</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"s1.find('e') = "</span> &lt;&lt; s1.<span class="built_in">find</span>(<span class="string">'e'</span>) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="comment">// 指定起始位置查到</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"s2.find(\"is\", 4) = "</span> &lt;&lt; s2.<span class="built_in">find</span>(<span class="string">"is"</span>, <span class="number">4</span>) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="comment">// 逆序查找</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"s2.rfind(\"is\") = "</span> &lt;&lt; s2.rfind(<span class="string">"is"</span>) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 判断字符串是否为空</span></span><br><span class="line">    <span class="keyword">if</span> (s1.empty()) &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"s1 is empty."</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"s1 is not empty."</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 判断字符串是否相等</span></span><br><span class="line">    <span class="keyword">if</span> (s1 == <span class="string">"hello"</span>) &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"s1 == hello"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"s1 != hello"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// string --&gt; int </span></span><br><span class="line">    <span class="built_in">string</span> s3 = <span class="string">"1314"</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"stoi(s3) = "</span> &lt;&lt; stoi(s3) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="comment">// string --&gt; float</span></span><br><span class="line">    <span class="built_in">string</span> s4 = <span class="string">"3.1415"</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"stof(s4) = "</span> &lt;&lt; stof(s4) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="实验操作2"><a href="#实验操作2" class="headerlink" title="实验操作2"></a>实验操作2</h3><p>实验要求：</p>
+<ol>
+<li>在 <code>/home/project/</code> 目录下创建一个 <code>useString.cpp</code> 文件。</li>
+<li>尝试根据代码示例编写程序。</li>
+<li>编写完并且保存文件。</li>
+<li>编译并查看是否有错误信息：<code>g++ useString.cpp -o useString -std=c++11</code>。</li>
+<li>运行程序：<code>./useString</code>。</li>
+</ol>
+<h4 id="实验代码："><a href="#实验代码：" class="headerlink" title="实验代码："></a>实验代码：</h4><p>见示例代码3和4</p>
+<h2 id="内联函数"><a href="#内联函数" class="headerlink" title="内联函数"></a>内联函数</h2><p>官方定义：内联函数又是称作 “在线函数” 或者 “编译时期展开函数” 的一种编程语言结构，用来建议编译器对一些特殊函数进行内联扩展；也就是说建议编译器将制定的函数体插入并取代每一次调用该函数的地方，从而节省每次调用函数带来的额外时间开支。</p>
+<ol>
+<li>定义内联函数关键字：inline。</li>
+<li>内联分为普通内联函数和类内联函数。</li>
+<li>定义内联函数时一般使用于简单的函数，如果函数比较复杂，编译器也将自动取消内联。</li>
+</ol>
+<h3 id="示例代码-5-普通内联函数"><a href="#示例代码-5-普通内联函数" class="headerlink" title="示例代码 5 普通内联函数"></a>示例代码 5 普通内联函数</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">max</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a &gt; b ? a : b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">min</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a &gt; b ? b : a;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">5</span>, b = <span class="number">7</span>;</span><br><span class="line">    <span class="comment">// 普通函数求最大值</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"max(a, b) = "</span> &lt;&lt; <span class="built_in">max</span>(a, b) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 内联函数求最小值</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"min(a, b) = "</span> &lt;&lt; <span class="built_in">min</span>(a, b) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="编译过程"><a href="#编译过程" class="headerlink" title="编译过程"></a>编译过程</h3><p>在编译过程中，将替换min(a,b)为a &gt; b ? b : a 。而非像max一样调用函数体执行 a &gt; b ? a : b 。</p>
+<h3 id="类内联函数"><a href="#类内联函数" class="headerlink" title="类内联函数"></a>类内联函数</h3><p>使用类内定义的成员函数编译器会默认将成员函数当做为内联函数进行编译。但如果成员函数比较复杂，编译器也不会将成员函数当做内联函数进行编译。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span> </span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="comment">// 访问限制符 - 公有属性</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    Student() &#123;&#125;    <span class="comment">// 构造函数</span></span><br><span class="line">    ~Student() &#123;&#125;    <span class="comment">// 析构函数</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 成员函数</span></span><br><span class="line">    <span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(<span class="built_in">string</span> name)</span> </span>&#123; <span class="keyword">this</span>-&gt;name = name; &#125;</span><br><span class="line">    <span class="function"><span class="keyword">inline</span> <span class="built_in">string</span> <span class="title">getName</span><span class="params">()</span> <span class="keyword">const</span> </span>&#123; <span class="keyword">return</span> name; &#125;;</span><br><span class="line">    <span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">setAge</span><span class="params">(<span class="keyword">int</span> age)</span> </span>&#123; <span class="keyword">this</span>-&gt;age = age; &#125;</span><br><span class="line">    <span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span> <span class="keyword">const</span> </span>&#123; <span class="keyword">return</span> age; &#125;</span><br><span class="line"><span class="comment">// 访问限制符 - 私有属性</span></span><br><span class="line"><span class="keyword">private</span>: </span><br><span class="line">    <span class="comment">// 数据成员</span></span><br><span class="line">    <span class="built_in">string</span> name;</span><br><span class="line">    <span class="keyword">int</span> age;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h4 id="实验操作-3"><a href="#实验操作-3" class="headerlink" title="实验操作 3"></a>实验操作 3</h4><p>实验要求：</p>
+<ol>
+<li>在 /home/project/ 目录下创建一个 classInline.cpp 文件。</li>
+<li>尝试根据代码示例编写程序。</li>
+<li>编写完并且保存文件。</li>
+<li>编译并查看是否有错误信息：g++ classInline.cpp -o classInline -std=c++11。</li>
+<li>运行程序并查看输出信息：./classInline。</li>
+</ol>
+<h4 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h4><ol>
+<li>编译器在编译时会将内联函数直接插入到调用内联函数处，这样可以减去调用函数时的开销。</li>
+<li>在实际开发过程中，可以酌情考虑使用类内定义的方法实现类成员函数。</li>
+</ol>
+<h2 id="类的定义与实例化"><a href="#类的定义与实例化" class="headerlink" title="类的定义与实例化"></a>类的定义与实例化</h2><ul>
+<li>类内定义。</li>
+<li>类外定义。<ul>
+<li>同文件类外定义。</li>
+<li>分文件类外定义。</li>
+</ul>
+</li>
+</ul>
+<p>在实际开发过程中需要考虑到程序的架构问题，类内定义适用于一个相对比较简单的程序，考虑到开发时的方便性和时间成本，类外定义是实际程序开发中常用的方法。</p>
+<h4 id="示例代码6"><a href="#示例代码6" class="headerlink" title="示例代码6"></a>示例代码6</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span> </span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    Student() &#123;&#125;</span><br><span class="line">    ~Student() &#123;&#125;</span><br><span class="line">    <span class="comment">// 定义成员函数并实现功能</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">setName</span><span class="params">(<span class="built_in">string</span> name)</span> </span>&#123; <span class="keyword">this</span>-&gt;name = name; &#125;</span><br><span class="line">    <span class="function"><span class="built_in">string</span> <span class="title">getName</span><span class="params">()</span> <span class="keyword">const</span> </span>&#123; <span class="keyword">return</span> name; &#125;;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">setAge</span><span class="params">(<span class="keyword">int</span> age)</span> </span>&#123; <span class="keyword">this</span>-&gt;age = age; &#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span> <span class="keyword">const</span> </span>&#123; <span class="keyword">return</span> age; &#125;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="built_in">string</span> name;</span><br><span class="line">    <span class="keyword">int</span> age;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Student stu;</span><br><span class="line">    stu.setName(<span class="string">"jake"</span>);</span><br><span class="line">    stu.setAge(<span class="number">15</span>);</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"My name is "</span> &lt;&lt; stu.getName() &lt;&lt; <span class="string">", I'm "</span> &lt;&lt; stu.getAge() &lt;&lt; <span class="string">" years old."</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>类内定义即在类中实现成员函数。在以上示例代码中，类中定义的成员函数都是使用的类内定义的方式实现的，在实际的开发中不建议这样做，除非是定义一个非常简单的类或者成员函数。</p>
+<p>在内联函数小节中提到过，类内定义的方式编译器会自动尝试将成员函数作为内联函数进行编译，如果成员函数比较复杂，编译器将不会作为内联函数进行编译。</p>
+<h3 id="类外定义"><a href="#类外定义" class="headerlink" title="类外定义"></a>类外定义</h3><p>类外定义有两种方式：</p>
+<ol>
+<li>同文件类外定义。</li>
+<li>分文件类外定义。</li>
+</ol>
+<h4 id="示例代码-7-同文件类外定义"><a href="#示例代码-7-同文件类外定义" class="headerlink" title="示例代码 7 同文件类外定义"></a>示例代码 7 同文件类外定义</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span> </span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    Student();</span><br><span class="line">    ~Student();</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">setName</span><span class="params">(<span class="built_in">string</span> name)</span></span>; </span><br><span class="line">    <span class="function"><span class="built_in">string</span> <span class="title">getName</span><span class="params">()</span> <span class="keyword">const</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">setAge</span><span class="params">(<span class="keyword">int</span> age)</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span> <span class="keyword">const</span></span>;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="built_in">string</span> name;</span><br><span class="line">    <span class="keyword">int</span> age;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Student::Student()</span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Student::~Student()</span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Student::setName</span><span class="params">(<span class="built_in">string</span> name)</span></span></span><br><span class="line"><span class="function"></span>&#123; </span><br><span class="line">    <span class="keyword">this</span>-&gt;name = name; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">Student::getName</span><span class="params">()</span> <span class="keyword">const</span> </span></span><br><span class="line"><span class="function"></span>&#123; </span><br><span class="line">    <span class="keyword">return</span> name; </span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Student::setAge</span><span class="params">(<span class="keyword">int</span> age)</span> </span></span><br><span class="line"><span class="function"></span>&#123; </span><br><span class="line">    <span class="keyword">this</span>-&gt;age = age; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Student::getAge</span><span class="params">()</span> <span class="keyword">const</span> </span></span><br><span class="line"><span class="function"></span>&#123; </span><br><span class="line">    <span class="keyword">return</span> age; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Student stu;</span><br><span class="line">    stu.setName(<span class="string">"jake"</span>);</span><br><span class="line">    stu.setAge(<span class="number">15</span>);</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"My name is "</span> &lt;&lt; stu.getName() &lt;&lt; <span class="string">", I'm "</span> &lt;&lt; stu.getAge() &lt;&lt; <span class="string">" years old."</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="实验操作-4"><a href="#实验操作-4" class="headerlink" title="实验操作 4"></a>实验操作 4</h4><p>实验要求：</p>
+<ol>
+<li>在 <code>/home/project/</code> 目录下创建一个 <code>sameFileOutClass.cpp</code> 文件。</li>
+<li>尝试根据代码示例编写程序。</li>
+<li>编写完并且保存文件。</li>
+<li>编译并查看是否有错误信息：<code>g++ sameFileOutClass.cpp -o sameFileOutClass -std=c++11</code>。</li>
+<li>运行程序并查看输出信息：<code>./sameFileOutClass</code>。</li>
+</ol>
+<h4 id="示例代码8-分文件类外定义"><a href="#示例代码8-分文件类外定义" class="headerlink" title="示例代码8 分文件类外定义"></a>示例代码8 分文件类外定义</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Student.h 文件</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> __STUDENT__</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> __STUDENT__</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span> </span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    Student();</span><br><span class="line">    ~Student();</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">setName</span><span class="params">(<span class="built_in">string</span> name)</span></span>; </span><br><span class="line">    <span class="function"><span class="built_in">string</span> <span class="title">getName</span><span class="params">()</span> <span class="keyword">const</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">setAge</span><span class="params">(<span class="keyword">int</span> age)</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span> <span class="keyword">const</span></span>;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="built_in">string</span> name;</span><br><span class="line">    <span class="keyword">int</span> age;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span> <span class="comment">// __STUDENT__</span></span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Student.cpp 文件</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"Student.h"</span>    <span class="comment">// 记得添加类头文件</span></span></span><br><span class="line"></span><br><span class="line">Student::Student()</span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Student::~Student()</span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Student::setName</span><span class="params">(<span class="built_in">string</span> name)</span></span></span><br><span class="line"><span class="function"></span>&#123; </span><br><span class="line">    <span class="keyword">this</span>-&gt;name = name; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">Student::getName</span><span class="params">()</span> <span class="keyword">const</span> </span></span><br><span class="line"><span class="function"></span>&#123; </span><br><span class="line">    <span class="keyword">return</span> name; </span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Student::setAge</span><span class="params">(<span class="keyword">int</span> age)</span> </span></span><br><span class="line"><span class="function"></span>&#123; </span><br><span class="line">    <span class="keyword">this</span>-&gt;age = age; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Student::getAge</span><span class="params">()</span> <span class="keyword">const</span> </span></span><br><span class="line"><span class="function"></span>&#123; </span><br><span class="line">    <span class="keyword">return</span> age; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// main.cpp 文件</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"Student.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Student stu;</span><br><span class="line">    stu.setName(<span class="string">"jake"</span>);</span><br><span class="line">    stu.setAge(<span class="number">15</span>);</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"My name is "</span> &lt;&lt; stu.getName() &lt;&lt; <span class="string">", I'm "</span> &lt;&lt; stu.getAge() &lt;&lt; <span class="string">" years old."</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="实验操作-5"><a href="#实验操作-5" class="headerlink" title="实验操作 5"></a>实验操作 5</h4><p>实验要求：</p>
+<ol>
+<li>在 <code>/home/project/</code> 目录下创建 <code>Student.h</code>、<code>Student.cpp</code>、<code>main.cpp</code> 文件。</li>
+<li>尝试根据代码示例编写程序。</li>
+<li>编写完并且保存文件。</li>
+<li>编译并查看是否有错误信息：<code>g++ main.cpp Student.cpp -o main -std=c++11</code>。</li>
+<li>运行程序并查看输出信息：<code>./main</code>。</li>
+</ol>
+<h4 id="小结-1"><a href="#小结-1" class="headerlink" title="小结"></a>小结</h4><p>同文件类外定义就是将类的成员函数定义在类之外的地方，同时类的成员函数使用类作用域来进行定义。在实际项目开发中，类不是很复杂时可以使用该方法，类比较复杂时不推荐使用。</p>
+<p>分文件定义类就是将类的定义放在 <code>xxx.h</code> 头文件中，而类的成员函数实现放在 <code>xxx.cpp</code> 文件中。这种做法是做项目时推荐使用的方法，因为这样将类的定义和成员函数分开后，在开发时很容易能够查找到对应的定义和成员函数。</p>
+<p>一般情况下文件名和类名相同，便于开发时类管理。</p>
+<h3 id="知识点总结"><a href="#知识点总结" class="headerlink" title="知识点总结"></a>知识点总结</h3><ul>
+<li>深入认识类与对象并讲解 C++ 相关概念。</li>
+<li>如何使用 string 类。</li>
+<li>普通内联函数与类内联函数以及编译器对内联函数的处理。</li>
+<li>学习类内定义与类外定义，开发时常使用分文件类外定义的方法。</li>
+<li>main 函数的返回值为 int 类型，注意不要写成 void 类型。</li>
+</ul>
+<h4 id="章节总结"><a href="#章节总结" class="headerlink" title="章节总结"></a>章节总结</h4><p>本章节讲解的是比较基础的知识点，但是在开发中却非常的重要，在接下来的章节中将会越来越深的学习 C++ 知识。</p>
+<p>希望在本章节结束后能掌握如何定义和使用类，并且掌握在工作中的实际用法。</p>
+<h4 id="实验答案"><a href="#实验答案" class="headerlink" title="实验答案"></a>实验答案</h4><ol>
+<li>做完实验 1 后对类的定义与使用有了进一步的认识，实验 1 最后输出对象的 name 和 age 值。</li>
+<li>实验 2 针对 string 类做练习。</li>
+<li>实验 3 针对内联函数的使用进行练习并总结注意事项。</li>
+<li>实验 4 针对类内定义成员函数做练习。</li>
+<li>实验 5 针对分文件类外定义练习。</li>
+</ol>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">jottings</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Cpp</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://darktalker.github.io/2020/06/16/Cpp-Advantage(1)/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2020/03/19/SEG-abstract-%E5%86%99%E4%BD%9C%E6%8C%87%E5%8C%97/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">SEG abstract 写作指北</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -226,9 +609,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
